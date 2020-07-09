@@ -1,0 +1,132 @@
+/*
+Margin: 
+Padding:
+
+.block{
+    float:left;
+    width:33.3%;
+    border:1px;
+    padding: 10px;
+    box-sizing:border-box;
+
+}
+
+
+Positioning:
+
+
+*/
+
+
+:root {
+    --dark: #011627;
+    --mid-dark: #e71d36;
+    --middle: #ff9f1c;
+    --light: #2ec4b6;
+    --lightest: #fdfffc;
+  }
+
+body{
+
+    font-family: 'Roboto',sans-serif;
+    background-color: var( --lightest );
+}
+
+.container{
+    width: 80%;
+    padding:0px;
+    margin:auto;
+    /* border: 2px red solid; */
+    display: flex;
+    flex-direction: column;
+}
+
+.settings{
+    padding-bottom: 2%;
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    /* border: 2px red solid; */
+}
+
+.settings input{
+    margin: 0px;
+    width: 200px;
+    height:26px;
+    padding-left: 10px;
+    border: 2px var(--dark) solid;
+    border-radius: 3px;
+}
+
+.settings button{
+    height: 32px;
+    margin-left: 2px;
+    border: 2px var(--dark) solid;
+    border-radius: 3px;
+    background-color: var(--lightest);
+    color: var(--dark);
+    font-weight: bold;
+}
+
+#submit-button:hover{
+    color: var(--mid-dark);
+    background: var(--lightest);
+    border: 2px var(--mid-dark) solid;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /*padding: 0.25%;*/    
+    /* border: 2px red solid; */
+    margin:auto;
+}
+
+p{
+    text-align: center;
+}
+
+.go{
+    margin:auto;
+    }
+
+#go-id{
+    border: 2px var(--dark) solid;
+    margin-top:1%;
+    margin-right:auto;
+    background-color: var(--lightest);
+    color: var(--dark);
+    font-weight: bold;
+    border-radius: 3px;
+    height: 32px;
+    }
+
+#go-id:hover {
+        color: var(--mid-dark);
+        background: var(--lightest);
+        border: 2px var(--mid-dark) solid;
+    }
+    
+
+.square{
+    font-size: 0;
+    margin:auto;
+    /* border-left: 0.5px #1d3557 solid; */
+    }
+
+.btn{
+    border: 0.5px var(--lightest) solid;
+    padding:0px;
+    margin:0px;
+    width:20px;
+    height:20px;
+    background-color: var(--dark);
+}
+
+
+/* how you identify states */
+button:hover {
+    color: var(--dark);
+    background: var(--lightest);
+}

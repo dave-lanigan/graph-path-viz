@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Graph Path Visualization</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    
+    <body>
+        
+        <div class="container">
+
+            <div class="settings">
+                    <input id="data" type="text" placeholder="Input square size (Ex: '16x16')">
+                    <button id="submit-button" >Go</button>
+            </div>
+        
+            <div class="message" id="message-div">
+                <p>This is a simulation of a Dijkstra's algorithm on an undirected graph.</p>
+                <p>First pick the size of the fully connected network represented by blocks.</p>
+                <p>Blocks represent node and adjacent blocks are edges.</p>
+                <p>The "start node" is selected for you. Select the "end node" and 
+                    then begin to create the graph by percolating the network by 
+                    click on the blocks you want to remove</p>
+            </div>
+
+            <div class="square" id="main-div">
+            </div>
+
+            <div class="go" id="go-div">
+            </div>
+        
+        
+        </div>
+
+        <script src="js/index.js" type="text/javascript"></script>
+    </body>
+</html> 
